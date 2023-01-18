@@ -15,7 +15,7 @@
     width: 250px;
     height: 250px;
     transform-style: preserve-3d; /* Enable 3D transforms */
-    animation: rotation 8s infinite linear;
+    animation: rotation 10s infinite linear;
     transition: transform 0.5s ease-in-out;
   }
   /* Define the front, back, top, bottom, left, and right faces of the cube */
@@ -30,14 +30,33 @@
     font-variant: small-caps;
     font-size: 25px;
     color: #fff;
+    border-radius: 50%;
 
   }
-  .cube .front  { transform: rotateY(  0deg) translateZ(125px); background-color: #00ffff65;}
-  .cube .back   { transform: rotateY(180deg) translateZ(125px); background-color: #00ffff65;}
-  .cube .top    { transform: rotateX( 90deg) translateZ(125px); background-color: #ae00ff6b;}
-  .cube .bottom { transform: rotateX(-90deg) translateZ(125px); background-color: #ae00ff6b;}
-  .cube .left   { transform: rotateY( 90deg) translateZ(125px); background-color: #f0111c71;}
-  .cube .right  { transform: rotateY(-90deg) translateZ(125px); background-color: #f0111c71;}
+  .cube .front  { transform: rotateY(0deg) translateZ(125px); 
+    background-image: url(sun.gif);
+    background-size: 250px;
+  }
+  .cube .back   { transform: rotateY(180deg) translateZ(125px); 
+    background: url(earth.gif);
+    background-size: 250px;
+  }
+  .cube .top    { transform: rotateX( 90deg) translateZ(125px); 
+    background-image: url(saturn.gif);
+    background-size: 250px;
+  }
+  .cube .bottom { transform: rotateX(-90deg) translateZ(125px);  
+    background: url(jupiter.gif);
+    background-size: 250px;
+  }
+  .cube .left   { transform: rotateY( 90deg) translateZ(125px);  
+    background: url(YTup.gif);
+    background-size: 250px;
+  }
+  .cube .right  { transform: rotateY(-90deg) translateZ(125px);  
+    background: url(drake.gif);
+    background-size: 250px;
+  }
   
   /* Define the animation */
   @keyframes rotation {
